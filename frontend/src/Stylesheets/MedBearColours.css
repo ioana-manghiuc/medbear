@@ -1,0 +1,23 @@
+:root{
+    --background-light-beige: #f5e7df;
+    --chats-background: #e6d3c9;
+    --form-menu-brown: #e5c6b4;
+    --text-dark-brown: #2a1a1d;
+    --text-brown: #33241d;
+    --subtext-brown: #766064;
+    --bear-light-brown: #db9c7c;
+    --bear-brown: #a2745c;
+    --medbear-logo-brown: #b7876e;
+    --button-burgundy: #7f413f;
+    --button-hover-muted-brick: #a87473;
+    --input-field-beige: #f6e8e1;
+    --light-blue:#c4e0ea;
+    --muted-light-blue:#b2c0c4;
+    --muted-blue: #6a7a7f;
+    --placeholder-beige: #c3b4af;
+    --error-txt:#9b0f0b;
+    --error-bgk: #b9988d;
+    --form-button-click: #c33d15;
+    --chat-message-user: #b9988d;
+    --chat-message-bot: #c0b2ae;
+}

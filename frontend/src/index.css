@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import './Stylesheets/Colours.css';
+@import './Stylesheets/MedBearColours.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Poppins';
+    font-size: 22px;
+    color: var(--blue);
+}
+
+
+@media (min-width: 600px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-light-beige);
+}
+
+.text{
+    font-family:'Poppins';
+    font-weight: 500;
+    color: var(--text-brown);
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button,
+textarea {
+  font-family:'RocknRoll One';
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: var(--stone-blue);
+  color: var(--beige-grey);
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: var(--blue);
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: var(--green);
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: var(--red);
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: var(--error-bgk);
+    color: var(--error-txt);
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius:5px;
+}
+
+.line a {
+    color: var(--link-blue);  
+    font-weight: bold;  
+    text-decoration: underline; 
+}
+
+.line a:visited {
+    color: var(--magenta);  
+}
+
+.line a:hover {
+    color: var(--link-blue);  
+    text-decoration: underline;  
+}
+
+.line a:active {
+    color: var(--link-blue);  
+}
+
+
+label[for="gdpr"] {
+    font-size: 1rem; 
+    cursor: pointer;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+#gdpr {
+    display: inline-block;
+    width: 24px; 
+    height: 24px; 
+    cursor: pointer;
+    vertical-align: middle; 
+    margin-right: 0.5rem; 
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    flex: 1; 
+    padding: 0.5rem; 
+}
+
+.password-container .eye-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: var(--stone-blue);
+    border-radius: 10px;
+    color: var(--white);
+    flex-shrink: 0; 
+    margin-top:-2px;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loading-text {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--light-blue);
+    margin-bottom: 1rem;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 7px solid var(--muted-light-blue); 
+    border-top: 7px solid var(--grey); 
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bear-photo {
+    flex: 1;
+    padding: 20px;
+}
+
+.bear-photo img {
+    max-width: 100px;
+    height: auto;
+}

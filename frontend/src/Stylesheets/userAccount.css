@@ -1,0 +1,104 @@
+@import './Colours.css';
+
+.welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    color:var(--light-blue);
+}
+
+.account-container {
+    padding: 20px;
+    max-width: 900px; 
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 90%; 
+}
+
+.collapsible-section {
+    border: 1px solid var(--stone-blue);
+    border-radius: 5px;
+    margin-top: 20px;
+    width:100%;
+}
+
+.header-edit{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--light-blue);
+    cursor: pointer;
+    border-bottom: 1px solid var(--stone-blue);
+    border-radius:5px;
+}
+
+.content {
+    padding: 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+.field {
+    margin-bottom: 10px;
+    display: flex; 
+    flex-direction: column; 
+    margin-left:130px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--prompt-blue);
+}
+
+.field input {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.edit-button, .save-button {
+    background-color: var(--prompt-blue);
+    color: var(--magenta);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 21px;
+    align-self: flex-end; 
+    margin-left:690px;
+    margin-bottom:15px;
+}
+
+.edit-button:hover, .save-button:hover {
+    color: var(--prompt-blue);
+    background-color: var(--magenta);
+}
+
+.error-message {
+    color: var(--red);
+    margin-bottom: 10px;
+    font-size: 17px;
+    background-color: var(--error-txt);
+    padding: 10px;
+    border-radius:5px;
+}
+.toggle-button{
+    width:60px;
+}
+
+.back-button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--prompt-blue);
+    color: var(--magenta);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left:50px;
+}
+
+.back-button:hover{
+    background-color: var(--magenta);
+    color: var(--prompt-blue);
+}
